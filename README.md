@@ -1,6 +1,6 @@
-It's a Python-simulation of how the ionosphere affects radio wave propagation day/night. Visualizes reflection, absorption, and whether the transmitted signal reaches the receiver or escapes to space based on user-input frequency and transmitter/receiver locations.Ionospheric Radio Wave Propagation Simulator.
+It's a Python-simulation of how the ionosphere affects radio wave propagation day/night. Visualizes reflection, absorption, and whether the transmitted signal reaches the receiver or escapes to space based on user-input frequency and transmitter/receiver location.
 
-Features
+Features:
 
 ---Synthetic Ionospheric Modeling
 
@@ -9,14 +9,14 @@ Due to the unavailability of a working real-time API, the simulation uses fully 
 Code for fetching real-time data from NOAA SWPC is included but falls back to synthetic data when unavailable.
 
 
----Radio Wave Propagation Analysis
+---Radio Wave Propagation Analysis:
 
 Calculates Maximum Usable Frequency (MUF) to determine if reflection occurs.
 
 Estimates path loss (dB) for the given transmitter-receiver pair.
 
 
----Supported Locations
+---Supported Locations:
 
 Built-in database of 25 major cities worldwide with latitude and longitude.
 
@@ -25,7 +25,7 @@ Users can input a city name or coordinates in the form lat,lon.
 Limitation: The program only works for these predefined cities; input outside this set defaults to a random location or may fail gracefully.
 
 
----Visualizations
+---Visualizations:
 
 Side view animation: Shows the height profile of the radio wave along its path.
 
@@ -34,7 +34,7 @@ Map view animation: Animated great-circle path on a world map using Cartopy.
 Fallback static plots are generated if animation fails or Cartopy is unavailable.
 
 
----Interactive Inputs
+---Interactive Inputs:
 
 Transmitter and receiver city names or coordinates.
 
@@ -43,7 +43,7 @@ Transmission frequency (kHz, MHz, or GHz).
 Day/night simulation mode to visualize ionospheric height differences.
 
 
-🔹 Technologies & Libraries
+---Technologies & Libraries:
 
 Python 3.12
 
@@ -54,7 +54,7 @@ Cartopy (optional, for map animation)
 Standard Python libraries: Datetime, OS, Warnings
 
 
-🔹 How to Use
+---How to Use:
 
 1.Clone the repository:
 
@@ -101,7 +101,7 @@ Frequency: 14.2M
 Mode: day
 
 
--- Limitations
+-- Limitations:
 
 Only works for 25 built-in cities. Other cities may produce random coordinates or fail gracefully.
 
@@ -110,7 +110,7 @@ Fully synthetic ionospheric data is used due to lack of real-time API access.
 Cartopy is optional; without it, map animations use simple lon-lat plots.
 
 
---- Applications
+--- Applications:
 
 Educational tool for understanding HF/VHF radio propagation.
 
